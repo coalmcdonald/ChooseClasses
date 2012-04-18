@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="10K549" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="z8u-1w-0fz">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="i0X-Ss-cHR">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDe-W8-QdN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="iHA-ke-cSK" customClass="Schedule" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="9Fi-Da-Y3d">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="YT7-ZV-QyW" detailTextLabel="lWj-0b-QBR" style="IBUITableViewCellStyleSubtitle" id="9nm-1b-zYG">
+                                <rect key="frame" x="0.0" y="46" width="320" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="10" y="1" width="280" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YT7-ZV-QyW">
+                                            <rect key="frame" x="10" y="2" width="38" height="22"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lWj-0b-QBR">
+                                            <rect key="frame" x="10" y="24" width="47" height="18"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="nAw-h6-Flv" kind="push" identifier="ShowDetail" id="qIY-2U-E3z"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Schedule" id="j3u-Af-4Xw">
+                        <barButtonItem key="rightBarButtonItem" title="Add" id="SWa-2s-Fk4">
+                            <connections>
+                                <segue destination="bbd-xD-KlB" kind="modal" modalTransitionStyle="flipHorizontal" id="ATF-zL-iNk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="134" y="106"/>
+        </scene>
+        <scene sceneID="qM7-oT-lyo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NzA-GO-XvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="bbd-xD-KlB" customClass="AddClasses" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xPN-G2-nDb">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Course Name" minimumFontSize="17" id="aTp-rt-sDJ">
+                                <rect key="frame" x="20" y="20" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YMu-jl-VH5">
+                                <rect key="frame" x="73" y="155" width="162" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addClick:" destination="bbd-xD-KlB" eventType="touchUpInside" id="LFd-rW-TeQ"/>
+                                    <segue destination="z8u-1w-0fz" kind="modal" modalTransitionStyle="flipHorizontal" id="Sub-FT-aSO"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Building" minimumFontSize="17" id="bDx-rW-hPb">
+                                <rect key="frame" x="20" y="67" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room Number" minimumFontSize="17" id="0s7-Ch-uFb">
+                                <rect key="frame" x="20" y="116" width="121" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="SIu-gx-q6J"/>
+                    <connections>
+                        <outlet property="txt_building" destination="bDx-rW-hPb" id="F7f-zV-OEF"/>
+                        <outlet property="txt_enterClass" destination="aTp-rt-sDJ" id="DcK-qP-voM"/>
+                        <outlet property="txt_roomNumber" destination="0s7-Ch-uFb" id="Okg-GB-C4C"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1012" y="-241"/>
+        </scene>
+        <scene sceneID="lnl-Ao-CoC">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIF-W2-aVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="nAw-h6-Flv" customClass="Modifications" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="r6j-63-Odu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" id="sgz-o8-1Z1">
+                                <rect key="frame" x="20" y="20" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" id="Jv9-cS-Svp">
+                                <rect key="frame" x="20" y="66" width="280" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="always" id="dFL-Wg-bGU">
+                                <rect key="frame" x="20" y="113" width="118" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="TLd-bM-OQ5">
+                                <rect key="frame" x="124" y="152" width="72" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="apply">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="apply_click:" destination="nAw-h6-Flv" eventType="touchUpInside" id="1OV-ST-TiL"/>
+                                    <segue destination="z8u-1w-0fz" kind="push" id="wSJ-p4-IOS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6qR-sn-yuB">
+                        <barButtonItem key="rightBarButtonItem" title="Remove" id="SIi-lC-HYH">
+                            <connections>
+                                <action selector="remove_click:" destination="nAw-h6-Flv" id="CKG-Hb-FHR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="txt_building" destination="Jv9-cS-Svp" id="yor-K8-KYg"/>
+                        <outlet property="txt_courseName" destination="sgz-o8-1Z1" id="qT2-Gh-J4u"/>
+                        <outlet property="txt_roomNumber" destination="dFL-Wg-bGU" id="bdg-Pz-OSR"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="790" y="636"/>
+        </scene>
+        <scene sceneID="bNK-hJ-49J">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAW-Lw-rVS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="z8u-1w-0fz" customClass="Nav" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="hT6-fO-Pjx"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="vwW-sU-J0c">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="iHA-ke-cSK" kind="relationship" relationship="rootViewController" id="5X1-UP-yXW"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-334" y="100"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="AddClasses" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddClasses.h"/>
+            <relationships>
+                <relationship kind="action" name="addClick:"/>
+                <relationship kind="outlet" name="lbl_class" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="txt_building" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txt_enterClass" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txt_roomNumber" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="Modifications" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Modifications.h"/>
+            <relationships>
+                <relationship kind="action" name="apply_click:"/>
+                <relationship kind="action" name="click_apply:"/>
+                <relationship kind="action" name="remove_click:"/>
+                <relationship kind="outlet" name="txt_building" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txt_courseName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="txt_roomNumber" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="Schedule" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/Schedule.h"/>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="wSJ-p4-IOS"/>
+    </inferredMetricsTieBreakers>
+</document>
