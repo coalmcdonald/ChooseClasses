@@ -45,6 +45,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad
 {
+    //comment
     // Configure the cell...
     ClassInfo *c = [ClassInfo sharedArrayManager];
     if ([c.classesList count] > 0){
